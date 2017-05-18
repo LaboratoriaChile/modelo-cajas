@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+	<!-- Estilos propios -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<section class="container">
+		<!-- estos van a ser content-box -->
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		
+	</section>
+	
+	<div>
+		<p>La suma de este es:</p> 
+		<p>
+			<b>width-total</b> = width + padding-left + padding-right + border-left + border-right
+		</p>
+		<p>
+			<b>width-total</b> = 80px + 20px + 20px + 5px + 5px = <b>130px</b>
+		</p>
+		<p>
+			TOTAL = (width-total * 3) + (20px *6) 
+		</p>
+		<p>
+			TOTAL = (130px * 3) + (20px *6) = <b>510px</b>
+		</p>
+	</div>
+	<section class="container caja">
+		<!-- estos van a ser border-box -->
+		<span class="border-dif">4</span>
+		<span>5</span>
+		<span>6</span>
+
+		
+		
+	</section>
+
+	<div>
+		<p>La suma de este es:</p> 
+		<p>
+			<b>width-total</b> = width 
+		</p>
+		<p>
+			<b>width-total</b> = 80px 
+		</p>
+		<p>
+			TOTAL = (width-total * 3) + (margin *6) 
+		</p>
+		<p>
+			TOTAL = (80px * 3) + (20px *6) = <b>360px</b>
+		</p>
+	</div>
+</body>
+</html>

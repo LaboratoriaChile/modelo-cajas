@@ -1,0 +1,84 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	width: 510px; 
+	background-color: #655265;
+	margin-bottom: 20px;
+	color: whitesmoke;
+	/* saco la cuenta con menos para probar si cabe sin el ultimo margin*/
+}
+
+/* CLASE DE FLOATING */
+/* Esto lo necesito por las mil cosas que hace el float */
+
+.container:before, .container:after{
+	content: "";
+	clear: both;
+	display: block;
+	
+
+}
+
+/* Content Box*/
+.container  span{
+	/* Estilos generales */
+	background-color: #905768;
+	color: whitesmoke;
+	font-size: 40px;
+
+	/* Proximos conceptos */
+	display: inline-block;
+	float: left; /*Esto no depende del display*/
+	
+	/*Modelo de caja*/
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	border: 20px solid #7A4F5A;
+	margin: 20px;
+}
+
+/* Border box */
+.container.caja span{
+	box-sizing: border-box;
+	width: 130px;
+	height: 130px;
+	border-width: 20px;
+}
+
+
+.container + div{
+	padding: 10px;
+	background-color: #655265;
+	width: 490px;
+	color: whitesmoke;
+	margin-bottom: 20px
+}
+
+/*
+.container .border-dif{
+	border-right-width: 20px;
+	border-left-width: 80px;
+	border-top: 10px;
+}
+
+.container{
+	padding-left: 0;
+	padding-right: 20px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
